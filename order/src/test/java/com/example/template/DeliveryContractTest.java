@@ -34,8 +34,7 @@ public class DeliveryContractTest {
     public void getDelivery_stub_test() throws Exception {
 
         MvcResult result = mockMvc
-        .perform(MockMvcRequestBuilders.get("/order/validateDeliveries/1")
-                .contentType(MediaType.APPLICATION_JSON))
+        .perform(MockMvcRequestBuilders.get("/order/validateDelivery/O12").contentType(MediaType.APPLICATION_JSON))
         .andExpect(status().isOk())
         .andReturn();
 

@@ -8,6 +8,7 @@ import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -28,6 +29,7 @@ public class OrderController {
     @Resource(name = "orderService")
     private OrderService orderService;
 
+    @Autowired
     private RestTemplate restTemplate;
 
     @GetMapping("/order/validateDelivery/{deliveryId}")
