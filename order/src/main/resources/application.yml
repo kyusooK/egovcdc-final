@@ -46,6 +46,10 @@ logging:
     org.springframework.cloud: debug
 
 
+api:
+  url:
+    delivery: http://localhost:8083
+
 server:
   port: 8082
 
@@ -81,4 +85,7 @@ spring:
           destination: egovk
           contentType: application/json
 
+api:
+  url:
+    delivery: http://localhost:8080
 
