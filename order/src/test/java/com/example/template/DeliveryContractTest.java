@@ -23,7 +23,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @SpringBootTest(classes = egovk.OrderApplication.class)
 @AutoConfigureMockMvc
 @AutoConfigureStubRunner(stubsMode = StubRunnerProperties.StubsMode.LOCAL, 
-                         ids = "egovk:deliveries:+:stubs:8090")
+                         ids = "egovk:delivery:+:stubs:8090")
 @ActiveProfiles("test")                      
 public class DeliveryContractTest {
 
